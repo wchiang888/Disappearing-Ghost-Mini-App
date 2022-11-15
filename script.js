@@ -6,9 +6,10 @@ let hideButton = document.querySelector (".hide-button");
 let showButton = document.querySelector (".show-button");
 let updateButton = document.querySelector (".update-img-button");
 let smButton = document.querySelector (".message-button");
-let nameButton = document.querySelector ("name-button");
+let nameButton = document.querySelector (".name-button");
 let userInput;
 let Ghost = document.querySelector (".ghost-image");
+let msg = document.querySelector (".message");
 //declare variable for ghost image
 
 
@@ -37,7 +38,7 @@ updateButton.onclick = (function (){
 //use the insertAdjacentHTML method to append the userInput in a <p> tag
 smButton.onclick = function (){
   let userInput = `<p> ${input.value} </p>`;
-  p.insertAdjacentHTML ('beforeend',userInput)
+  msg.insertAdjacentHTML ('beforeend',userInput)
 };
 
 
